@@ -37,7 +37,7 @@ public class Trip {
     @Column(name = "owner_email", nullable = false)
     private String ownerEmail;
 
-    public Trip(TripRequestPayLoad data){
+    public Trip(TripRequestPayload data){
         this.destination = data.destination();
         this.isConfirmed = false;
         this.ownerEmail = data.owner_email();
