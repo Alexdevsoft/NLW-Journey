@@ -1,0 +1,43 @@
+package participant;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import trip.Trip;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Entity
+@Table(name = "participants")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Participant {
+    @Id
+    private UUID id;
+
+    @Column(name = "is_confirmed", nullable = false)
+    private boolean isConfirmed;
+
+
+    @Column(name = "name", nullable = false)
+    private String name;
+
+    @Column(nullable = false)
+    private String email;
+
+    @ManyToOne
+    @JoinColumn(name = "trip_id", nullable = false)
+    private Trip trip;
+
+    public Participant(String email, Trip trip){
+        this.email = email;
+        this.trip = trip;
+        this.isConfirmed = false;
+        this.name = "";
+    }
+}
