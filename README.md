@@ -34,5 +34,13 @@ Journey é um aplicativo desenvolvido em Java utilizando Spring Boot, com o obje
 - **Spring Data JPA**: Para interação com o banco de dados.
 - **MySQL** ou **PostgreSQL**: Banco de dados relacional para armazenamento das informações.
 
+## Objetivos do Projeto
 
+O **Journey** foi criado para oferecer uma experiência intuitiva e eficiente no planejamento de viagens, sejam elas a trabalho ou lazer. Ao centralizar todas as informações em uma única plataforma, o aplicativo busca:
+
+- Melhorar a comunicação entre os participantes.
+- Otimizar o planejamento das atividades.
+- Tornar a organização de viagens mais prática e acessível.
+
+**Explore o Journey e simplifique o gerenciamento das suas viagens!**
 
